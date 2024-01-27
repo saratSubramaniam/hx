@@ -11,28 +11,55 @@
         rel="stylesheet">
 </head>
 
+<style>
+    table.main {
+        width: 650px;
+        background-color: #000;
+    }
 
-<body style="font-family: 'Montserrat', sans-serif; font-size:14px; background-color: white; margin:0 auto;">
+    table.sub {
+        width: 550px;
+    }
+
+    @media only screen and (max-width: 670px) {
+        body {
+            background-color: #000;
+        }
+
+        table.main {
+            width: 100% !important;
+        }
+
+        table.sub {
+            width: 90% !important;
+        }
+
+        img.header {
+            width: 100% !important;
+        }
+    }
+</style>
+
+<body style="font-family: 'Montserrat', sans-serif; font-size:14px; margin:0 auto;">
 
     <!---Main Table Starts--->
-    <table width="650" cellspacing="0" cellpadding="0" border="0" align="center">
+    <table class="main" cellspacing="0" cellpadding="0" border="0" align="center">
         <tbody>
 
             <tr>
-                <td><img src="images/header.png" alt="" width="650" align="left"></td>
+                <td><img class="header" src="images/header.png" alt="" width="650" align="left"></td>
             </tr>
 
             <tr>
                 <td>
 
-                    <table width="650" cellspacing="0" cellpadding="0" border="0" align="center" background="#d21c29"
-                        style="background:#000000">
+                    <table class="main" cellspacing="0" cellpadding="0" border="0" align="center" background="#d21c29">
                         <tbody>
 
                             <tr>
                                 <td align="center">
 
-                                    <table width="550" cellspacing="0" cellpadding="0" border="0" align="center">
+                                    <table class="sub" cellspacing="0" cellpadding="0" border="0" align="center">
                                         <tbody>
 
 
@@ -201,14 +228,13 @@
             <tr>
                 <td>
 
-                    <table width="650" cellspacing="0" cellpadding="0" border="0" align="center" background="#d21c29"
-                        style="background:#000000">
+                    <table class="main" cellspacing="0" cellpadding="0" border="0" align="center" background="#d21c29">
                         <tbody>
 
                             <tr>
                                 <td align="center">
 
-                                    <table width="550" cellspacing="0" cellpadding="0" border="0" align="center"
+                                    <table class="sub" cellspacing="0" cellpadding="0" border="0" align="center"
                                         style="border: 1px solid white;padding: 0px 20px;">
                                         <tbody>
 
@@ -553,14 +579,13 @@
             <tr>
                 <td>
 
-                    <table width="650" cellspacing="0" cellpadding="0" border="0" align="center" background="#d21c29"
-                        style="background:#000000">
+                    <table class="main" cellspacing="0" cellpadding="0" border="0" align="center" background="#d21c29">
                         <tbody>
 
                             <tr>
                                 <td align="center">
 
-                                    <table width="550" cellspacing="0" cellpadding="0" border="0" align="center">
+                                    <table class="sub" cellspacing="0" cellpadding="0" border="0" align="center">
                                         <tbody>
 
                                             <tr>
