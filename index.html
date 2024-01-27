@@ -1,0 +1,920 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>ALDAR</title>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        p {
+            margin: 0;
+            padding: 0;
+            font-family: 'Tajawal', sans-serif;
+            font-size: 12px;
+            color: #000000;
+            line-height: 10px;
+        }
+
+        @media only screen and (max-width: 670px) {
+            .hide {
+                display: none
+            }
+
+            .deskhide {
+                display: table;
+            }
+
+            td[class="w480-small-hide"] {
+                border: medium none !important;
+                float: left !important;
+                height: 10px !important;
+                margin-top: 0 !important;
+                text-align: left !important;
+                width: 100% !important;
+            }
+
+            .topic-hide {
+                display: none;
+            }
+
+            .td-hide {
+                width: 20px !important;
+                height: 20px !important;
+                border: none !important;
+                display: table-cell !important;
+            }
+
+            .headerhide {
+                height: auto !important;
+                min-height: 1px !important;
+                min-width: 300px !important;
+                width: 100%;
+                display: table;
+            }
+
+            table[class=main] {
+                clear: both;
+                width: 100% !important;
+                margin: 0;
+            }
+
+
+            table[class=main-area] {
+                clear: both;
+                width: 100% !important;
+                margin: 0;
+                padding: 20px 20px 0 20px;
+            }
+
+
+            table[class=main-area-mid] {
+                clear: both;
+                width: 100% !important;
+                margin: 0;
+                padding: 0 20px 0 20px;
+            }
+
+
+            table[class=left] {
+                clear: both;
+                width: 100%;
+            }
+
+            table[class=right] {
+                clear: both;
+                width: 100% !important;
+            }
+
+            /* tr[class=w480] {
+
+            } */
+
+            div[class=w480] {
+                clear: both;
+                width: 100% !important;
+            }
+
+            h1[class=w480] {
+                text-align: left;
+                font-size: 20px;
+                text-transform: uppercase;
+            }
+
+            h2[class=w480] {
+                text-align: left;
+                font-size: 18px;
+                margin: 0;
+                padding: 0;
+            }
+
+            span[class=w480] {
+                font-size: 16px;
+                margin: 5px 0 5px 0;
+            }
+
+            p[class=w480] {
+                font-size: 13px !important;
+                margin: 10px 0 10px 0 !important;
+            }
+
+            img[class=w480] {
+                width: 100% !important;
+                min-width: 300px !important;
+                min-height: 1px !important;
+                height: auto !important;
+            }
+
+            img[class=wmob-spc] {
+                width: 100%;
+                min-width: 300px !important;
+                height: 10px !important;
+            }
+
+            img[class=w132] {
+                width: 132px;
+                min-width: 100px !important;
+                min-height: 1px !important;
+                height: auto !important;
+            }
+
+            img[class=w300] {
+                width: 300px;
+                min-width: 300px !important;
+                min-height: 1px !important;
+                height: auto !important;
+            }
+
+            td[class=widthmob] {
+                width: 20px !important;
+                height: 20px !important;
+                border: none !important;
+            }
+
+            tr[class=wmob] {
+                height: 20px !important;
+                border: none !important;
+            }
+
+            tr[class=wmob-line] {
+                border: none !important;
+                height: 1px !important;
+            }
+
+            tr[class="wmob-small"] {
+                height: 5px !important;
+                border: none !important;
+            }
+
+            img[class="wmob-small"] {
+                height: 25px;
+            }
+
+            img[class=w480-img] {
+                width: 100% !important;
+                min-width: 300px !important;
+                min-height: 1px !important;
+            }
+
+            td[class=w480] {
+                width: 100% !important;
+                float: left !important;
+                /* text-align: center !important; */
+                margin-top: 0 !important;
+                border: none !important;
+            }
+
+            img[class=w480-line] {
+                width: 100% !important;
+                min-width: 300px !important;
+                min-height: 1px !important;
+            }
+
+            td[class=w480-img] {
+                width: 100% !important;
+                float: left !important;
+                text-align: center !important;
+                margin-top: 0 !important;
+                border: none !important;
+            }
+
+            td[class=w480-small] {
+                width: 100% !important;
+                height: 50px !important;
+                float: left !important;
+                text-align: left !important;
+                margin-top: 0 !important;
+                border: none !important;
+            }
+
+            td[class=w480-spc] {
+                width: 100% !important;
+                height: 8px !important;
+                float: left !important;
+                text-align: left !important;
+                margin-top: 0 !important;
+                border: none !important;
+            }
+
+            td[class=w480-txt] {
+                width: 100% !important;
+                float: right !important;
+                text-align: right !important;
+                margin-top: 0 !important;
+                border: none !important;
+            }
+
+            td[class=w480-icon] {
+                width: 40px !important;
+                float: left !important;
+            }
+
+            td[class=w480] {
+                width: 100% !important;
+                float: left !important;
+                margin-top: 0 !important;
+                border: none !important;
+            }
+
+            td[class=w480-line] {
+                width: 100% !important;
+                float: left !important;
+                margin-top: 0 !important;
+                border: none !important;
+                height: 1px !important;
+            }
+
+            .widthimgmob {
+                width: 100%;
+                height: 100%;
+            }
+
+            *[class].show {
+                display: inline !important
+            }
+
+            *[class].h10 {
+                height: 10px !important
+            }
+
+            *[class].h5 {
+                height: 5px !important
+            }
+
+            *[class].h {
+                height: 5px !important
+            }
+        }
+
+        table.services tr td {
+            padding: 5px 0px;
+        }
+
+        table.services {
+            border: 1px solid white;
+            padding: 0px 20px;
+        }
+    </style>
+
+</head>
+
+
+<body style="font-family: 'Montserrat', sans-serif; font-size:14px; background-color: white; margin:0 auto;">
+
+    <!---Main Table Starts--->
+    <table class="main" width="650" cellspacing="0" cellpadding="0" border="0" align="center">
+        <tbody>
+
+            <tr class="wmob">
+                <td class="w480"><img src="images/header.png" class="w480" alt="" width="650" align="left"></td>
+            </tr>
+
+            <tr class="wmob">
+                <!-- <td class="w480" style="background: #000;" bgcolor="d21c29"> -->
+                <td class="w480">
+
+                    <table class="main-area" width="650" cellspacing="0" cellpadding="0" border="0" align="center"
+                        background="#d21c29" style="background:#000000">
+                        <tbody>
+
+                            <tr class="wmob">
+                                <td class="w480" align="center">
+
+                                    <table class="main" width="550" cellspacing="0" cellpadding="0" border="0"
+                                        align="center">
+                                        <tbody>
+
+
+                                            <tr class="wmob">
+                                                <td class="w480">&nbsp;
+
+                                                </td>
+                                            </tr>
+
+                                            <tr class="wmob">
+                                                <td class="w480">&nbsp;
+
+                                                </td>
+                                            </tr>
+
+
+                                            <tr class="wmob">
+                                                <td class="w480">
+                                                    <p
+                                                        style="font-size:26px; font-weight:300; line-height:30px; font-family: 'Montserrat', sans-serif; color:#ffffff;font-weight: bold;">
+                                                        WELCOME TO YOUR NEW HOME IN XXX</p>
+                                                </td>
+                                            </tr>
+
+
+                                            <tr class="wmob">
+                                                <td class="w480">&nbsp;
+                                                </td>
+                                            </tr>
+
+                                            <tr class="wmob">
+                                                <td class="w480">
+                                                    <p
+                                                        style="font-family:'Montserrat', Arial;  font-size:12px; line-height:17px; color: #ffffff; margin: 0; padding: 0;">
+                                                        Dear (Customer Name),
+                                                    </p>
+                                                </td>
+                                            </tr>
+
+
+                                            <tr class="wmob">
+                                                <td class="w480">
+                                                    <p
+                                                        style="font-family:'Montserrat', Arial;  font-size:12px; line-height:17px; color: #ffffff; margin: 9px 0; padding: 0;">
+                                                        Congratulations on your new home! We’re delighted to welcome you
+                                                        to
+                                                        the Aldar community.
+                                                    </p>
+                                                </td>
+                                            </tr>
+
+
+                                            <tr class="wmob">
+                                                <td class="w480">
+                                                    <p
+                                                        style="font-family:'Montserrat', Arial;  font-size:12px; line-height:17px; color: #ffffff; margin: 9px 0; padding: 0;">
+                                                        We know that a home is one of the more important purchases
+                                                        you’ll ever made. So, to ensure that yours is a secure, happy
+                                                        and hassle-free place, we’ve created Aldar Aftercare. A
+                                                        one-of-a-kind warranty programme that allows you to call on us
+                                                        for support with almost anything during the first year in your
+                                                        Aldar home.
+                                                    </p>
+                                                </td>
+                                            </tr>
+
+                                            <tr class="wmob">
+                                                <td class="w480">
+                                                    <p
+                                                        style="font-family:'Montserrat', Arial;  font-size:12px; line-height:17px; color: #ffffff; margin: 9px 0; padding: 0;">
+                                                        The programme is made up of two services:
+                                                    </p>
+                                                </td>
+                                            </tr>
+
+                                            <tr class="wmob">
+                                                <td class="w480">
+                                                    <p
+                                                        style="font-family:'Montserrat', Arial;  font-size:12px; line-height:17px; color: #ffffff; margin: 9px 0; padding: 0;font-weight: bold;">
+                                                        The Defect Liability Period (DLP)
+                                                    </p>
+                                                </td>
+                                            </tr>
+
+                                            <tr class="wmob">
+                                                <td class="w480">
+                                                    <p
+                                                        style="font-family:'Montserrat', Arial;  font-size:12px; line-height:17px; color: #ffffff; margin: 9px 0; padding: 0;">
+                                                        A period of one year from the date your home is ready for
+                                                        occupancy, during which all defects in the home are rectified by
+                                                        Aldar.
+                                                    </p>
+                                                </td>
+                                            </tr>
+
+                                            <tr class="wmob">
+                                                <td class="w480">
+                                                    <p
+                                                        style="font-family:'Montserrat', Arial;  font-size:12px; line-height:17px; color: #ffffff; margin: 9px 0; padding: 0;font-weight: bold;">
+                                                        Annual Maintenance Contract (AMC) handled by HomeX
+                                                    </p>
+                                                </td>
+                                            </tr>
+
+                                            <tr class="wmob">
+                                                <td class="w480">
+                                                    <p
+                                                        style="font-family:'Montserrat', Arial;  font-size:12px; line-height:17px; color: #ffffff; margin: 9px 0; padding: 0;">
+                                                        A service that makes sure all of your assets and home systems
+                                                        are well-maintained during the DLP. This includes annual deep
+                                                        cleaning, AC, electrical and plumbing maintenance, and more.
+                                                    </p>
+                                                </td>
+                                            </tr>
+
+                                            <tr class="wmob">
+                                                <td class="w480">
+                                                    <p
+                                                        style="font-family:'Montserrat', Arial;  font-size:12px; line-height:17px; color: #ffffff; margin: 9px 0; padding: 0;">
+                                                        Please note that the Defect Liability Period (DLP) and Annual
+                                                        Maintenance Contract (AMC) of your home are active.
+                                                    </p>
+                                                </td>
+                                            </tr>
+
+                                            <tr class="wmob">
+                                                <td class="w480">
+                                                    <p
+                                                        style="font-family:'Montserrat', Arial;  font-size:12px; line-height:17px; color: #ffffff; margin: 9px 0; padding: 0;">
+                                                        Defect Liability Period (DLP) Start Date: XX
+                                                        <br>
+                                                        Annual Maintenance Contract (AMC) Start Date: XX
+                                                    </p>
+                                                </td>
+                                            </tr>
+
+                                            <tr class="wmob">
+                                                <td class="w480">
+                                                    <p
+                                                        style="font-family:'Montserrat', Arial;  font-size:12px; line-height:17px; color: #ffffff; margin: 9px 0; padding: 0;">
+                                                        Utilizing these benefits will guarantee your home remains in its
+                                                        optimal condition, letting you focus on what truly
+                                                        matters–making cherished memories in your new Aldar home.
+                                                    </p>
+                                                </td>
+                                            </tr>
+
+                                            <tr class="wmob">
+                                                <td class="w480">&nbsp;</td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+
+                </td>
+            </tr>
+
+            <!-- Sub table starts -->
+
+            <tr class="wmob">
+                <td class="w480">
+
+                    <table class="main-area" width="650" cellspacing="0" cellpadding="0" border="0" align="center"
+                        background="#d21c29" style="background:#000000">
+                        <tbody>
+
+                            <tr class="wmob">
+                                <td class="w480" align="center">
+
+                                    <table class="main services" width="550" cellspacing="0" cellpadding="0" border="0"
+                                        align="center">
+                                        <tbody>
+
+                                            <tr class="wmob">
+                                                <td class="w480"></td>
+                                                <td class="w480">
+                                                    <p
+                                                        style="font-family:'Montserrat', Arial;  font-size:12px; line-height:17px; color: #ffffff; margin: 9px; padding: 0;font-weight: bold;">
+                                                        DESCRIPTION OF SERVICE
+                                                    </p>
+                                                </td>
+                                                <td class="w480">
+                                                    <p
+                                                        style="font-family:'Montserrat', Arial;  font-size:12px; line-height:17px; color: #ffffff; margin: 9px; padding: 0;font-weight: bold;">
+                                                        INCLUSION
+                                                    </p>
+                                                </td>
+                                            </tr>
+
+                                            <tr class="wmob">
+                                                <td class="w480">
+                                                    <img src="images/icon-emergency.png" />
+                                                </td>
+                                                <td class="w480">
+                                                    <p
+                                                        style="font-family:'Montserrat', Arial;  font-size:12px; line-height:17px; color: #ffffff; margin: 9px; padding: 0;">
+                                                        Emergency callouts for AC, electrical, and plumbing failure
+                                                    </p>
+                                                </td>
+                                                <td class="w480">
+                                                    <p
+                                                        style="font-family:'Montserrat', Arial;  font-size:12px; line-height:17px; color: #ffffff; margin: 9px; padding: 0;">
+                                                        Unlimited
+                                                    </p>
+                                                </td>
+                                            </tr>
+
+                                            <tr class="wmob">
+                                                <td class="w480">
+                                                    <img src="images/icon-routine.png" />
+                                                </td>
+                                                <td class="w480">
+                                                    <p
+                                                        style="font-family:'Montserrat', Arial;  font-size:12px; line-height:17px; color: #ffffff; margin: 9px; padding: 0;">
+                                                        Routine callouts for AC, electrical, and plumbing issues
+                                                    </p>
+                                                </td>
+                                                <td class="w480">
+                                                    <p
+                                                        style="font-family:'Montserrat', Arial;  font-size:12px; line-height:17px; color: #ffffff; margin: 9px; padding: 0;">
+                                                        Unlimited
+                                                    </p>
+                                                </td>
+                                            </tr>
+
+                                            <tr class="wmob">
+                                                <td class="w480">
+                                                    <img src="images/icon-respo-emergency.png" />
+                                                </td>
+                                                <td class="w480">
+                                                    <p
+                                                        style="font-family:'Montserrat', Arial;  font-size:12px; line-height:17px; color: #ffffff; margin: 9px; padding: 0;">
+                                                        Response Time (Emergency Call)
+                                                    </p>
+                                                </td>
+                                                <td class="w480">
+                                                    <p
+                                                        style="font-family:'Montserrat', Arial;  font-size:12px; line-height:17px; color: #ffffff; margin: 9px; padding: 0;">
+                                                        60 Minutes
+                                                    </p>
+                                                </td>
+                                            </tr>
+
+                                            <tr class="wmob">
+                                                <td class="w480">
+                                                    <img src="images/icon-resp-reactive.png" />
+                                                </td>
+                                                <td class="w480">
+                                                    <p
+                                                        style="font-family:'Montserrat', Arial;  font-size:12px; line-height:17px; color: #ffffff; margin: 9px; padding: 0;">
+                                                        Response Time (Reactive Call) - during working hours
+                                                    </p>
+                                                </td>
+                                                <td class="w480">
+                                                    <p
+                                                        style="font-family:'Montserrat', Arial;  font-size:12px; line-height:17px; color: #ffffff; margin: 9px; padding: 0;">
+                                                        2 Hours
+                                                    </p>
+                                                </td>
+                                            </tr>
+
+                                            <tr class="wmob">
+                                                <td class="w480"></td>
+                                                <td class="w480">
+                                                    <p
+                                                        style="font-family:'Montserrat', Arial;  font-size:12px; line-height:17px; color: #ffffff; margin: 9px; padding: 0;font-weight: bold;">
+                                                        GENERAL SERVICES
+                                                    </p>
+                                                </td>
+                                                <td class="w480"></td>
+                                            </tr>
+
+                                            <tr class="wmob">
+                                                <td class="w480">
+                                                    <img src="images/icon-gen-deep.png" />
+                                                </td>
+                                                <td class="w480">
+                                                    <p
+                                                        style="font-family:'Montserrat', Arial;  font-size:12px; line-height:17px; color: #ffffff; margin: 9px; padding: 0;">
+                                                        Deep cleaning and sanitization
+                                                    </p>
+                                                </td>
+                                                <td class="w480">
+                                                    <p
+                                                        style="font-family:'Montserrat', Arial;  font-size:12px; line-height:17px; color: #ffffff; margin: 9px; padding: 0;">
+                                                        1
+                                                    </p>
+                                                </td>
+                                            </tr>
+
+                                            <tr class="wmob">
+                                                <td class="w480">
+                                                    <img src="images/icon-gen-pest.png" />
+                                                </td>
+                                                <td class="w480">
+                                                    <p
+                                                        style="font-family:'Montserrat', Arial;  font-size:12px; line-height:17px; color: #ffffff; margin: 9px; padding: 0;">
+                                                        Pest Control Service including bait stations for rodents with 6
+                                                        months warranty
+                                                    </p>
+                                                </td>
+                                                <td class="w480">
+                                                    <p
+                                                        style="font-family:'Montserrat', Arial;  font-size:12px; line-height:17px; color: #ffffff; margin: 9px; padding: 0;">
+                                                        2
+                                                    </p>
+                                                </td>
+                                            </tr>
+
+                                            <tr class="wmob">
+                                                <td class="w480">
+                                                    <img src="images/icon-gen-hvac.png" />
+                                                </td>
+                                                <td class="w480">
+                                                    <p
+                                                        style="font-family:'Montserrat', Arial;  font-size:12px; line-height:17px; color: #ffffff; margin: 9px; padding: 0;">
+                                                        HVAC Duct Cleaning
+                                                    </p>
+                                                </td>
+                                                <td class="w480">
+                                                    <p
+                                                        style="font-family:'Montserrat', Arial;  font-size:12px; line-height:17px; color: #ffffff; margin: 9px; padding: 0;">
+                                                        1
+                                                    </p>
+                                                </td>
+                                            </tr>
+
+                                            <tr class="wmob">
+                                                <td class="w480">
+                                                    <img src="images/icon-gen-ppm.png" />
+                                                </td>
+                                                <td class="w480">
+                                                    <p
+                                                        style="font-family:'Montserrat', Arial;  font-size:12px; line-height:17px; color: #ffffff; margin: 9px; padding: 0;">
+                                                        PPM Services to HVAC, Plumbing, and Electrical services as per
+                                                        OMMs (quarterly)
+                                                    </p>
+                                                </td>
+                                                <td class="w480">
+                                                    <p
+                                                        style="font-family:'Montserrat', Arial;  font-size:12px; line-height:17px; color: #ffffff; margin: 9px; padding: 0;">
+                                                        4 per Year
+                                                    </p>
+                                                </td>
+                                            </tr>
+
+                                            <tr class="wmob">
+                                                <td class="w480">
+                                                    <img src="images/icon-gen-fire.png" />
+                                                </td>
+                                                <td class="w480">
+                                                    <p
+                                                        style="font-family:'Montserrat', Arial;  font-size:12px; line-height:17px; color: #ffffff; margin: 9px; padding: 0;">
+                                                        Fire fighting system maintenance and servicing/check up on all
+                                                        fire
+                                                        extinguishers and blankets
+                                                    </p>
+                                                </td>
+                                                <td class="w480">
+                                                    <p
+                                                        style="font-family:'Montserrat', Arial;  font-size:12px; line-height:17px; color: #ffffff; margin: 9px; padding: 0;">
+                                                        2
+                                                    </p>
+                                                </td>
+                                            </tr>
+
+                                            <tr class="wmob">
+                                                <td class="w480">
+                                                    <img src="images/icon-gen-handyman.png" />
+                                                </td>
+                                                <td class="w480">
+                                                    <p
+                                                        style="font-family:'Montserrat', Arial;  font-size:12px; line-height:17px; color: #ffffff; margin: 9px; padding: 0;">
+                                                        Handyman services/ Hrs
+                                                    </p>
+                                                </td>
+                                                <td class="w480">
+                                                    <p
+                                                        style="font-family:'Montserrat', Arial;  font-size:12px; line-height:17px; color: #ffffff; margin: 9px; padding: 0;">
+                                                        2
+                                                    </p>
+                                                </td>
+                                            </tr>
+
+                                            <tr class="wmob">
+                                                <td class="w480"></td>
+                                                <td class="w480">
+                                                    <p
+                                                        style="font-family:'Montserrat', Arial;  font-size:12px; line-height:17px; color: #ffffff; margin: 9px; padding: 0;font-weight: bold;">
+                                                        SUMMER SERVICES
+                                                    </p>
+                                                </td>
+                                                <td class="w480"></td>
+                                            </tr>
+
+                                            <tr class="wmob">
+                                                <td class="w480">
+                                                    <img src="images/icon-sum-water.png" />
+                                                </td>
+                                                <td class="w480">
+                                                    <p
+                                                        style="font-family:'Montserrat', Arial;  font-size:12px; line-height:17px; color: #ffffff; margin: 9px; padding: 0;">
+                                                        Water tank cleaning and system disinfection with
+                                                        certification/tank
+                                                    </p>
+                                                </td>
+                                                <td class="w480">
+                                                    <p
+                                                        style="font-family:'Montserrat', Arial;  font-size:12px; line-height:17px; color: #ffffff; margin: 9px; padding: 0;">
+                                                        1
+                                                    </p>
+                                                </td>
+                                            </tr>
+
+                                            <tr class="wmob">
+                                                <td class="w480">
+                                                    <img src="images/icon-sum-lub.png" />
+                                                </td>
+                                                <td class="w480">
+                                                    <p
+                                                        style="font-family:'Montserrat', Arial;  font-size:12px; line-height:17px; color: #ffffff; margin: 9px; padding: 0;">
+                                                        Lubrication of sliding gates motors and rails (if applicable)
+                                                    </p>
+                                                </td>
+                                                <td class="w480">
+                                                    <p
+                                                        style="font-family:'Montserrat', Arial;  font-size:12px; line-height:17px; color: #ffffff; margin: 9px; padding: 0;">
+                                                        1
+                                                    </p>
+                                                </td>
+                                            </tr>
+
+                                            <tr class="wmob">
+                                                <td class="w480"></td>
+                                                <td class="w480">
+                                                    <p
+                                                        style="font-family:'Montserrat', Arial;  font-size:12px; line-height:17px; color: #ffffff; margin: 9px; padding: 0;font-weight: bold;">
+                                                        WINTER SERVICES
+                                                    </p>
+                                                </td>
+                                                <td class="w480"></td>
+                                            </tr>
+
+                                            <tr class="wmob">
+                                                <td class="w480">
+                                                    <img src="images/icon-win-water.png" />
+                                                </td>
+                                                <td class="w480">
+                                                    <p
+                                                        style="font-family:'Montserrat', Arial;  font-size:12px; line-height:17px; color: #ffffff; margin: 9px; padding: 0;">
+                                                        Water tank cleaning and system disinfection with
+                                                        certification/tank
+                                                    </p>
+                                                </td>
+                                                <td class="w480">
+                                                    <p
+                                                        style="font-family:'Montserrat', Arial;  font-size:12px; line-height:17px; color: #ffffff; margin: 9px; padding: 0;">
+                                                        1
+                                                    </p>
+                                                </td>
+                                            </tr>
+
+                                            <tr class="wmob">
+                                                <td class="w480">
+                                                    <img src="images/" />
+                                                </td>
+                                                <td class="w480">
+                                                    <p
+                                                        style="font-family:'Montserrat', Arial;  font-size:12px; line-height:17px; color: #ffffff; margin: 9px; padding: 0;">
+                                                        All gutters, balcony and roof drains cleaning including
+                                                        windows/sliding doors
+                                                        overflow channels
+                                                    </p>
+                                                </td>
+                                                <td class="w480">
+                                                    <p
+                                                        style="font-family:'Montserrat', Arial;  font-size:12px; line-height:17px; color: #ffffff; margin: 9px; padding: 0;">
+                                                        1
+                                                    </p>
+                                                </td>
+                                            </tr>
+
+                                            <tr class="wmob">
+                                                <td class="w480">
+                                                    <img src="images/icon-win-windows.png" />
+                                                </td>
+                                                <td class="w480">
+                                                    <p
+                                                        style="font-family:'Montserrat', Arial;  font-size:12px; line-height:17px; color: #ffffff; margin: 9px; padding: 0;">
+                                                        All windows and door silicon seals to be checked
+                                                    </p>
+                                                </td>
+                                                <td class="w480">
+                                                    <p
+                                                        style="font-family:'Montserrat', Arial;  font-size:12px; line-height:17px; color: #ffffff; margin: 9px; padding: 0;">
+                                                        1
+                                                    </p>
+                                                </td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+
+            <tr class="wmob">
+                <!-- <td class="w480" style="background: #000;" bgcolor="d21c29"> -->
+                <td class="w480">
+
+                    <table class="main-area" width="650" cellspacing="0" cellpadding="0" border="0" align="center"
+                        background="#d21c29" style="background:#000000">
+                        <tbody>
+
+                            <tr class="wmob">
+                                <td class="w480" align="center">
+
+                                    <table class="main" width="550" cellspacing="0" cellpadding="0" border="0"
+                                        align="center">
+                                        <tbody>
+
+                                            <tr class="wmob">
+                                                <td class="w480">&nbsp;</td>
+                                            </tr>
+
+                                            <tr class="wmob">
+                                                <td class="w480">
+                                                    <p
+                                                        style="font-family:'Montserrat', Arial;  font-size:12px; line-height:17px; color: #ffffff; margin: 9px 0; padding: 0;">
+                                                        Should you require further clarifications, please feel free to
+                                                        contact us or email us at customercare@aldar.com
+                                                    </p>
+                                                </td>
+                                            </tr>
+
+                                            <tr class="wmob">
+                                                <td class="w480" style="padding: 0px 15px;">
+                                                    <ul
+                                                        style="font-family:'Montserrat', Arial;  font-size:12px; line-height:17px; color: #ffffff; margin: 9px 0; padding: 0;">
+                                                        <li>Within the United Arab Emirates: 800-ALDAR (25327)</li>
+                                                        <li>International: +971 2 6725327</li>
+                                                        <li>KAR Contact Details</li>
+                                                        <li>HO AGENT Contact Details / DLP Executive</li>
+                                                        <li>AMC Team Contact Details</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+
+                                            <tr class="wmob">
+                                                <td class="w480">&nbsp;</td>
+                                            </tr>
+
+                                            <tr class="wmob">
+                                                <td class="w480">
+                                                    <p
+                                                        style="font-family:'Montserrat', Arial;  font-size:12px; line-height:17px; color: #ffffff; margin: 9px 0; padding: 0;">
+                                                        Kind Regards,<br>
+                                                        The Aldar Aftercare Team
+                                                    </p>
+                                                </td>
+                                            </tr>
+
+                                            <tr class="wmob">
+                                                <td class="w480" style="text-align: center;">
+                                                    <img src="images/logo-aldar.png" />
+                                                </td>
+                                            </tr>
+
+                                            <tr class="wmob">
+                                                <td class="w480" style="text-align: center;">
+                                                    <p
+                                                        style="font-family:'Montserrat', Arial;  font-size:12px; line-height:17px; color: #ffffff; margin: 9px 0; padding: 0;">
+                                                        Disclaimer: We take our customers’ privacy and security very seriously and have measures to ensure your data is transmitted securely.
+                                                    </p>
+                                                </td>
+                                            </tr>
+
+                                            <tr class="wmob">
+                                                <td class="w480">&nbsp;</td>
+                                            </tr>
+
+                                            <tr class="wmob">
+                                                <td class="w480">&nbsp;</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+
+                            <!-- Sub table ends -->
+
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <!---Main Table Ends--->
+
+</body>
+
+</html>
